@@ -35,6 +35,6 @@ d3.csv("../../data/restaurants.csv").then(data => {
     .data(d => Object.values(d))
     .join("td")
     // update the below logic to apply to your dataset
-    .attr("class", d => d == 'Brooklyn' ? 'high' : null)
+    .attr("class", d => d == 'Brooklyn' ? 'borough' : null)
     .text(d => d);
 });

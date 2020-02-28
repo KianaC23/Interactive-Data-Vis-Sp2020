@@ -127,7 +127,7 @@ function init() {
  * */
 function draw() {
   // filter the data for the selectedParty
-  let filteredData;
+  let filteredData = [];
   if (state.selectedCountry !== null) {
     filteredData = state.data.filter(d => d.country === state.selectedCountry);
   }
@@ -141,7 +141,7 @@ function draw() {
     .duration(1000)
     .call(yAxis.scale(yScale)); // this updates the yAxis' scale to be our newly updated one
 
-  // we define our line function generator telling it how to access the x,y values for each point
+  //we define our line function generator telling it how to access the x,y values for each point
   const lineFunc = d3
     .line()
     .x(d => xScale(d.year))
@@ -171,8 +171,8 @@ function draw() {
             .remove()
         )
     )
-    // the '.join()' function leaves us with the 'Enter' + 'Update' selections together.
-    // Now we just need move them to the right place
+//     // the '.join()' function leaves us with the 'Enter' + 'Update' selections together.
+//     // Now we just need move them to the right place
     .call(
       selection =>
         selection
@@ -200,4 +200,4 @@ function draw() {
         .attr("opacity", 1)
         .attr("d", d => lineFunc(d))
     );
-}
+ }

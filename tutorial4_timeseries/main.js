@@ -3,7 +3,7 @@ const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 },
   radius = 5;
-  default_selection = "Select a DC Character"
+  default_selection = "DC Character Gender"
 
 // these variables allow us to access anything we manipulate in init() but need access to in draw().
 // All these variables are empty before we assign something to them.
@@ -87,7 +87,7 @@ function init() {
     .attr("class", "axis-label")
     .attr("x", "50%")
     .attr("dy", "3em")
-    .text("Year");
+    .text("Year of First Appearance");
 
 
   svg
@@ -100,7 +100,7 @@ function init() {
     .attr("y", "50%")
     .attr("dx", "-3em")
     .attr("writing-mode", "vertical-rl")
-    .text("Appearances");
+    .text("Number of Appearances");
 
   // + CALL AXES
 

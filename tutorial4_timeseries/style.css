@@ -1,0 +1,22 @@
+
+.dot {
+    cursor: pointer;
+    color: steelblue;
+    opacity: 0.5;
+  }
+  
+  .dot:hover {
+    fill: orange;
+  }
+  
+  .axis-label {
+    font-size: 14px;
+    fill: black;
+    text-anchor: middle;
+  }
+  
+  .trend {
+    fill: none;
+    stroke: black;
+  }
+  

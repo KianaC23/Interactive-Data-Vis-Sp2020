@@ -140,7 +140,13 @@ function draw() {
           .attr("r", radius)
           .attr("cy", height - margin.bottom)
           .attr("cx", d => xScale(d.year))
-          .attr("fill", "pink"),
+          .attr("fill", d => {
+            if(d.name === "Transgender Characters") return "purple";
+            else if (d.name === "Male Characters") return "blue";
+            else if (d.name === "Female Characters") return "red";
+            else if (d.name === "Genderless Characters") return "green";
+            else return "gray";
+          }),
       update => update,
       exit =>
         exit.call(exit =>

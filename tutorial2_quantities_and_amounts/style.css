@@ -5,10 +5,14 @@ body {
 }
 
 .label {
-  fill: white;
+  color: black;
   text-anchor: middle;
 }
 
 .axis {
   font-size: 16px;
+}
+
+.bar{
+	fill:orange;
 }

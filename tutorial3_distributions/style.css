@@ -27,3 +27,7 @@ body {
   fill: black;
   text-anchor: middle;
 }
+
+.svg{
+  padding-top: 10px
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Interactive Data Visualization Narrative Project</title>
+
+    <!-- custom font: https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Diversity in the Director's Chair </h1>
+    </header>
+    
+    <!--<h1>Percentage by Gender Over Time</h1> 
+
+
+    <label for="dropdown">Filter Selection</label>
+    <select id="dropdown" name="dropdown"></select> -->
+    <!-- all we need is an element to select -->
+
+    <div>
+      <p>
+        For this project I initially wanted to look at diversity among directors of the most popular films of the last ten years. 
+        Most articles pointed to the same study by the Annenberg Foundation at USC that puts out an annual report on diversity
+        among the major film studios. They touch on many factors surrounding the disparity between women, undersrepesented groups and
+        their white male counterparts. This includes hiring practices, which genre directors get to film and much more. The study started in 2007 so I made a dataset using the top 100 grossing films (domestic) 
+        from 2007 -2019 using their study as a touchstone. My numbers are not exactly the same as they publish before the final totals
+        for each year are reported. Overall Hollywood has alot of work to do. For my project I focused on women, specifically women of color.
+        In the 1300 movies I analyzed only 12 of them were directed by women of color. There were only 10 individuals who directed 
+        the films. 
+      </p>
+    </div>
+
+    <section> 
+      <h2>Director Diversity by Distributor 2007-2019 </h2>
+        <p> 
+          The treemap below shows the number of male, female, and women of color directors that have 
+          directed a top 100 film with a major distrubutor (Universal, Disney etc.) in the last 13 years. The tooltip gives the exact number 
+          of movies directed by a person in each catergory. WoC stand for woman of color.
+        </p>
+    </section>
+      <div id="treemap2"> </div>
+    
+    
+    <section> 
+      <div id="linechart"></div>
+    </section>
+      
+
+    <!-- this is the line that loads in d3 -->
+    <script src="../lib/d3.js"></script>
+    <script src="../../lib/d3-array.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <!--<script src="./directors2018.js"></script>-->
+    <!-- <script src="./distributors.js"></script>-->
+    <script src="./distro2.js"></script>
+    <script src="./percents.js"></script>
+    <!--<script>src="./floatingAxis.js"</script>-->
+   
+  </body>
+</html>

@@ -17,7 +17,7 @@ let state = {
 /**
  * LOAD DATA
  * */
-d3.csv("../../data/boxoffice_edited.csv", d3.autotype).then(data => {
+d3.csv("../data/boxoffice_edited.csv", d3.autotype).then(data => {
   state.data = data;
   init();
 });

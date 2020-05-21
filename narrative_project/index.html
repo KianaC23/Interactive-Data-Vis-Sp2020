@@ -14,15 +14,11 @@
       <h1>Diversity in the Director's Chair </h1>
     </header>
     
-    <!--<h1>Percentage by Gender Over Time</h1> 
-
-
-    <label for="dropdown">Filter Selection</label>
-    <select id="dropdown" name="dropdown"></select> -->
+    
     <!-- all we need is an element to select -->
 
-    <div>
-      <p>
+   
+      <div class='text'>
         For this project I initially wanted to look at diversity among directors of the most popular films of the last ten years. 
         Most articles pointed to the same study by the Annenberg Foundation at USC that puts out an annual report on diversity
         among the major film studios. They touch on many factors surrounding the disparity between women, undersrepesented groups and
@@ -31,19 +27,39 @@
         for each year are reported. Overall Hollywood has alot of work to do. For my project I focused on women, specifically women of color.
         In the 1300 movies I analyzed only 12 of them were directed by women of color. There were only 10 individuals who directed 
         the films. 
-      </p>
-    </div>
+      </div>
+
+    
 
     
       <h2>Director Diversity by Distributor 2007-2019 </h2>
-        <p> 
+      <div class='section' id='two'>
+        <div class='text'>
           The treemap below shows the number of male, female, and women of color directors that have 
           directed a top 100 film with a major distrubutor (Universal, Disney etc.) in the last 13 years. The tooltip gives the exact number 
-          of movies directed by a person in each catergory. WoC stand for woman of color.
-        </p>
-    
-      <div id="treemap2"> </div>
-    
+          of movies directed by a person in each catergory. WoC stand for woman of color. As you can see the gap between male and female directors is quite large.
+          Looking at the difference between men and women of color is even larger. This is far from reflecting the US population that is about____. some distributors ar better than 
+          others when it comes to hiring women and people of color. 
+        </div>
+         <div class='graph' id='treemap'>
+       </div> 
+       <div class ='section' id = 'four'>
+        <h2>Percentage by Gender Over Time</h2> 
+        <div class="text">
+          The following line chart shows trends over time. There has been a steady rise in directors of color helming top films with the best year being 2018
+          when 15 directors of color directed movies in the top 100 grossing films. 
+        </div>
+        <label for="dropdown">Filter Selection</label>
+        <select id="dropdown" name="dropdown"></select>
+        <div class='graph' id='linechart'> </div> 
+      </div> 
+      <div class ="text">
+        Black Panther ranked number 1 that year domestically with a total grossing of over 700 million dollars. Even so women of color are still far behind their male counterparts. Of the 15 directors on the chart below only one
+          was female. Ava DuVernay directed a Wrinkle in Time. This is her second top 100 film after her 2016 film Selma. She is one of two women of color who have
+          helmed more than one top 100 film (Jessica Yuh Nelson being the other).
+      </div>
+     <div class ='graph' id='barchart'></div>
+    <div id="d3-container"></div>
     
     <!--<section> 
       <div id="linechart"></div>
@@ -53,11 +69,12 @@
     <script src="../lib/d3.js"></script>
     <script src="../../lib/d3-array.js"></script>
     <!-- this is the line that loads in the main js script -->
-    <!--<script src="./directors2018.js"></script>-->
+    <!-- <script src="./directors2018.js"></script> -->
     <!-- <script src="./distributors.js"></script>-->
-    <script src="./distro2.js"></script>
-   <!--< <script src="./percents.js"></script>
-    script>src="./floatingAxis.js"</script>-->
-   
+    <!-- <script src="./treemap.js"></script> -->
+     <script type ="module" src="./main.js"></script>
+     <!-- <script src="./linechart.js"></script>  -->
+    <!-- <script>src="./distro2.js"</script>  -->
+    <!-- <script>src="./floatingaxis.js"</script>  -->
   </body>
 </html>

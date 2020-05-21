@@ -1,6 +1,6 @@
 // import our components
 import { treemap } from "./treemap.js"
-import { barchart } from "./barchart.js";
+import { barchart } from "./barchart2.js";
 import { linechart } from "./linechart.js";
 
 

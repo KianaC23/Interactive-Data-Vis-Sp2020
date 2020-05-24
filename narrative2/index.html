@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Interactive Data Visualization Tutorial</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Diversity in the Director's Chair</h1>
+      <h2>By Kiana Carrington</h2>
+    </header>
+
+    <div class='text'>
+      Blockbuster films are a staple in American culture filled with high flying superheroes, romance, action thrillers and much more. These movies are part of the American psyche but do they reflect us as a public?For this project, I will focus on racial/ethnic diversity among directors of the highest grossing Hollywood films of the last thirteen years. Hollywood has been behind newer competitors like Netflix in regard to hiring women and underrepresented groups to helm the content being produced. In this project I reference annual reports from the Annenberg Inclusive Initiative at University of Southern California’s School of Communications and Journalism. They have reports on many aspects of this issue including diversity on screen and behind the camera. I was particularly interested in who’s behind the camera, so I focused on directors of the top 100 highest grossing films domestically. The Annenberg study started in 2007, so I made a dataset using the top 100 grossing films (domestic) from 2007 -2019 using their study as a touchstone. My numbers are not exactly the same, as they publish before the final totals for each year are reported. Overall Hollywood has plenty of work to do. In the thirteen years I analyzed there were only 51 female directors, Which accounts for 4% of the total number of directors over those years. In addition, of those 51 women only 10 were from underrepresented groups. I believe the Annenberg Inclusion Initiative to be a reliable source. Almost all of the articles I came across while researching referenced their reports including news sources like The New York Times  and CBS News. 
+    </div>
+    
+      <div class='section'>
+        <h2>Director Diversity by Distributor 2007-2019 </h2>
+        <div class='text'>
+          The visualization below shows the total number of directors on films that were in the 
+        among the top 100 grosing films of their respective years. These numbers are then broken down by 
+        by catergory: male, female, and underrepresented racial/ethnic groups.
+         </div> 
+        <div id="dashboard">
+      <!-- all we need is an element to select -->
+        <div id="table"> </div>
+        <div id="barchart"> </div>
+        <div id="count"> </div>
+      </div>
+   <div class ='section' id ='two'>
+      <h2>Percentage by Gender Over Time</h2> 
+      <div class="text">
+      The following line chart shows the same numbers we looked at above as a percentage. Looking at the major
+      film studios how have they done in areas of diversity over time? Not too long agoe
+      #OscarsSoWhite was trending. Should the backlash be limited to the awardshow or is it just a symptom of a larger
+      systemic issue? I believe this graph shows the latter. The gap between men and women is quite large and virtually unchanged
+      in the 13 year timespan.  This is far from reflecting the US population that is almost 40% people of color according to the US Census Bureau. 
+      There has been a steady rise in directors of color helming top films with the best year being 2018.
+       
+      </div>
+      <div class='graph' id='linechart'> </div>
+    </div>  
+    <div class = 'section' id ='four'>
+    
+    <div class ="text">
+      2018 saw the highest growth in movies directed by people of color when 15 directors of color directed movies in the 
+      top 100 grossing films.Black Panther ranked number 1 that year domestically with a total grossing of over 700 million dollars. Even so women of color are still far behind their male counterparts. Of the 15 directors on the chart below only one
+        was female. Ava DuVernay directed a Wrinkle in Time. This is her second top 100 film after her 2016 film Selma. She is one of two women of color who have
+        helmed more than one top 100 film (Jessica Yuh Nelson being the other). The length of the bars are determined by the total gross
+        domestically for each film.
+    </div>
+  </div>
+  <h2>Movies by Directors of Color 2018</h2>
+   <div class ='graph' id='barchart2'></div>
+  <div id="d3-container"></div> 
+    <!-- this is the line that loads in d3 -->
+    <script src="../../lib/d3.js"></script>
+    <script src="../../lib/d3-array.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

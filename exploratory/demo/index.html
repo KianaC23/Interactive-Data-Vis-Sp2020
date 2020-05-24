@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .countries {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+    .legendThreshold {
+        font-size: 12px;
+        font-family: sans-serif;
+    }
+    .caption {
+        fill: #000;
+        text-anchor: start;
+        font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="info">Hover over a country</div>
+  <!-- <div id="content">
+    
+    <svg width="620px" height="600px">
+      <g class="map"></g>
+      <g class="bounding-box"><rect></rect></g>
+      <g class="centroid"><circle r="4"></circle></g>
+    </svg>
+  </div> -->
+  <div id="hover-content"></div>
+  <div id="africa-map"> </div>
+  <!-- <div id="treemap>"></div> -->
+  <script src="../../lib/d3.js"></script>  
+  <script src="main2.js"></script>
+  <!-- <script src="./treemap.js"></script> -->
+</body>

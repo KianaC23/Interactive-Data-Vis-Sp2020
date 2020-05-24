@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <style>
+
+    path {
+      fill: #ccc;
+      stroke: #fff;
+      stroke-width: .5px;
+    }
+    
+    path:hover {
+      fill: red;
+    }
+    
+    </style>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3.geo.projection.v0.min.js">    
+</script>
+</head>
+<body>
+    <div id="map"></div> 
+</body>
+<script type="text/javascript">
+  var width = 700,
+  height = 500;
+
+  // var projection = d3.geo.mercator()
+  // .center([0, 0])
+  // .scale(3500);
+
+  
+  var svg = d3.select("#map")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+  var path = d3.geo.path()
+  .projection(projection);
+
+  var g = svg.append("g");
+
+  d3.json("../../data/africa2.json", function(error, topology) {
+  console.log(topology);
+//   var url = "../../data/africa.json"
+//   d3.json(url, function(error, topology) {
+//   if (error) throw error;
+  
+//   console.log("topojson", topology)
+//   var geojson = topojson.feature(topology, topology.objects.countries);
+//   console.log("geojson", geojson)
+
+  svg.selectAll("path")
+      .data(geojson.features)
+      .enter().append("path")
+      .attr("d", path);
+});
+  g.selectAll("path")
+  .data(topojson.feature(topology, topology.objects.countries).features)
+  .enter()
+    .append("path")
+    .attr("d", path);
+
+  });
+    </script>
+</html>
